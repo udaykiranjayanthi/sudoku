@@ -4,6 +4,9 @@
 h1{
 	font-weight: 600;
 }
+body{
+	width: 100%;
+}
 
 .navbar{
 	height: 70px;
@@ -36,8 +39,8 @@ h1{
 	top: auto;
 	left: 0px;
 	background-color: rgba(0,0,0,0.8);
+	height: calc(100vh - 70px);
 	width: 100%;
-	height: 100%;
 	z-index: 1;
 	text-align: center;
 }
@@ -435,6 +438,9 @@ td{
 	.top-info{
 		width: 322px;
 		font-size: 12px;
+	}
+	.full-popup{
+		height: calc(100vh - 62px);
 	}
 	#timer .timeValue{
 		font-size: 12px;
