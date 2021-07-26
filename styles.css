@@ -35,14 +35,15 @@ body{
 }
 
 .full-popup{
-	position: absolute;
-	top: auto;
+	position: fixed;
+	top: 0px;
 	left: 0px;
 	background-color: rgba(0,0,0,0.8);
-	height: calc(100% - 70px);
+	height: calc(100%);
 	width: 100%;
-	z-index: 1;
+	z-index: 4;
 	text-align: center;
+
 }
 .popup-content{
 	display: inline-block;
@@ -50,7 +51,7 @@ body{
 	width: 100%;
 	min-width: 250px;
 	color: white;
-	margin-top: 150px;
+	margin-top: 210px;
 	font-size: 18px
 	/*text-align: left;*/
 }
@@ -440,7 +441,7 @@ td{
 		font-size: 12px;
 	}
 	.full-popup{
-		height: calc(100% - 62px);
+		height: calc(100%);
 	}
 	#timer .timeValue{
 		font-size: 12px;
