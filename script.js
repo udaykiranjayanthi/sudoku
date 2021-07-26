@@ -79,7 +79,7 @@ $(document).ready(function(){
         		errors ++;
 				$('#errorcount').text(errors + '/3');
 				if(errors == 3){
-					alert("Game ended!! You have made 3 mistakes.\nDo you want to start new game ?")
+					alert("Game ended!! You have made 3 mistakes.\nDo you want to start new game ?");
 					window.location.href = 'index.html';	
 				}
 		    }
@@ -319,7 +319,7 @@ function checkComplete(){
 			}
 		}
 	}
-	validateGrid();
+	validateGrid(false);
 	return true;
 }
 
@@ -482,7 +482,7 @@ function level(board, n){
 	return grid;
 }
 
-function validateGrid(viewsol = false){
+function validateGrid(viewsol){
 	var isValid = true;
 	for (var row = 0; row < 9; row++) {
 		for (var col = 0; col < 9; col++) {
