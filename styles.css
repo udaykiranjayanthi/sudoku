@@ -1,0 +1,457 @@
+*{ 
+	font-family: 'Poppins', sans-serif;
+}
+h1{
+	font-weight: 600;
+}
+
+.navbar{
+	height: 70px;
+	border-radius: 0px;
+	padding-top: 10px;
+	color: white;
+	margin-bottom: 0px;
+	box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.3);
+}
+
+.navbar-brand{
+	font-weight: 600;
+	font-size: 30px;
+	color: #eee  !important;
+}
+.navbar .navopt{
+	color: #ddd !important;
+}
+
+.navbar .navopt:hover{
+	color: #fff !important;
+}
+
+.navbar .dropdown-menu li a{
+	padding: 15px 20px;
+}
+
+.full-popup{
+	position: absolute;
+	top: auto;
+	left: 0px;
+	background-color: rgba(0,0,0,0.8);
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	text-align: center;
+}
+.popup-content{
+	display: inline-block;
+	height: auto;
+	width: 100%;
+	min-width: 250px;
+	color: white;
+	margin-top: 150px;
+	font-size: 18px
+	/*text-align: left;*/
+}
+.popup-content p{
+	font-size: 25px;
+	margin-bottom: 20px;
+}
+.popup-content .levels{
+	display: inline-block;
+	border: 1px solid black;
+	font-size: 18px;
+	width: 250px;
+	padding: 25px 10px;
+	margin: 3px 0px;
+	border-radius: 5px;
+	color: black;
+	font-weight: 500;
+	box-sizing: border-box;
+	border-collapse: collapse;
+	cursor: pointer;
+	text-align: center;
+	transition-duration: 0.2s;
+	background-image: linear-gradient(to top right, rgba(255,255,255,0.8) , rgba(255,255,255,0.7));
+}
+
+.popup-content .levels:hover{
+	background-image: linear-gradient(to bottom left, rgba(255,255,255,0.8) , rgba(255,255,255,0.7));
+}
+
+.popup-name .nameip{
+	border-width: 0px;
+	border-bottom-width: 2px;
+	font-size: 50px;
+	background-color: rgba(0,0,0,0);
+	margin-bottom: 10px;
+	margin-top: 30px;
+	text-align: center;
+	color: #fe2;
+	width: auto;
+	padding-bottom: 5px;
+}
+.popup-name .nameip:focus{
+	outline: none;
+}
+
+#sudoku {
+	border-radius: 0px;
+	overflow: hidden;
+	border: 0.5px solid black;
+	display: inline-block;
+}
+.main{
+	height: 500px;
+}
+
+.sudo{
+	float: left;
+	width: 500px;
+	height: 100%;
+	/*background-color: pink;*/
+
+}
+.input-buttons{
+	width: 100%;
+	height: 100%;
+	/*background-color: yellow;*/
+	text-align: center;
+}
+
+.tg{
+	display: block;
+	margin-left: 10px;
+	font-size: 0px;
+}
+
+.input-buttons span{
+	width: 10%;
+	height: 90px;
+	display: inline-block;
+	background-color: rgba(128,128,128,0.01);
+	border: 0.5px solid gray;
+	margin: 0px;
+	font-size: 30px;
+	padding: 25px;
+	text-align: center;	cursor: pointer;
+}
+.input-buttons span:hover{
+	background-color: rgba(128,128,128,0.2);
+}
+#bx{
+	width: 30%;
+	height: 75px;
+	font-size: 35px;
+	padding-top: 12px;
+}
+
+.top-info{
+	width: 460px;
+	display: inline-block;
+}
+
+#timer {
+	padding: 5px;
+	padding-left: 0px;
+	color: #333;
+	display: inline-block;
+	width: 33%;
+	text-align: left;
+}
+#difficulty {
+	text-align: right;
+	display: inline-block;
+	width: 33%;
+	padding: 5px;
+	font-weight: 600;
+}
+#errors {
+	text-align: center;
+	display: inline-block;
+	width: 32%;
+	padding: 5px;
+	font-weight: 600;
+}
+
+#bottom-info{
+	text-align: center;
+	display: inline-block;
+	width: 460px;
+	margin-bottom: 15px;
+}
+#bottom-info #status{
+	color: #0053aa;
+	display: inline-block;
+	width: 63%;
+	text-align: left;
+	font-size: 15px;
+	padding: 4px 0px;
+}
+
+#bottom-info #view-sol{
+	display: inline-block;
+	color: black;
+	width: 35%;
+	background-color: rgba(128,128,128,0.2);
+	border-radius: 2px;
+	cursor: pointer;
+	font-size: 13px;
+	padding: 5px 0px;
+	border: 0.5px solid gray;
+}
+#bottom-info #view-sol:hover{
+	background-color: rgba(128,128,128,0.3);
+}
+
+#timer .timeValue{
+	padding-top: 0px;
+	font-weight: 700;
+	font-size: 14px;
+	font-family: 'JetBrains Mono';
+}
+.action-buttons {
+	margin-top: 40px;
+	font-size: 9px;
+}
+
+.action-buttons button{
+	padding: 3px 10px;
+	height: 70px;
+	text-align: center;
+	font-size: 15px;
+	border: 0.5px solid black;
+	border-radius: 3px;
+}
+.action-buttons #reset{
+	width: 10%;
+	background-color: rgba(128,128,128,0.1);
+}
+.action-buttons #newgame{
+	width: 20%;
+	background-color: #0053aa;
+	color: white;
+}
+
+.action-buttons #reset:hover{
+	background-color: rgba(128,128,128,0.3);
+}
+.action-buttons #newgame:hover{
+	background-color: #004070;
+}
+.action-buttons button:focus{
+	outline: none;
+}
+
+.cell{
+	width: 50px;
+	height: 50px;
+	background-color: rgba(0,0,0,0);
+	text-align: center;
+	border: 0.5px solid gray;
+	font-size: 30px;
+	margin: 0px;
+    caret-color: transparent;
+    cursor: pointer;
+    font-weight: 400;
+    color: #00b;
+}
+
+.cell:hover{
+	background-color: rgba(0,100,255,0.2);
+	transition-duration: 0.01s;
+}
+
+.cell:focus{
+	background-color: rgba(0,100,255,0.5);
+	outline: none;
+}
+.cell[data-input="false"]{
+	font-weight: 500;
+	color: black;
+}
+.gray-box{
+	background-color: rgba(127,127,127,0.1);
+}
+
+td{
+	margin: 0px;
+}
+
+
+
+/*toggle theme start*/
+
+.switch-theme input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+.switch-theme{
+	font-weight: normal;
+	margin-bottom: 0px;
+	cursor: pointer;
+	padding: 15px;
+}
+.switch-text::after{
+	content: "Dark theme"
+}
+.switch-theme input:checked ~ .switch-text::after {
+  	content: "Light theme";
+}
+
+.darkbg{
+	background-color: #30303a;
+}
+.cellcolor{
+	color: #ff0;
+}
+.yellowtext{
+	color: #ff0 !important;
+}
+.cellcolorfalse{
+	color: #eee !important;
+}
+.white-border{
+	border: 0.5px solid gray !important;
+}
+
+/*toggle theme start*/
+
+
+/*stats page (performance) starts*/
+
+.statsbox{
+	box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.2);
+	border-radius: 5px;
+	/*border: 1px solid black;*/
+	padding: 5px 15px;
+	position: relative;
+	overflow: hidden;
+}
+.statsbox .badges{
+	transform: rotate(45deg);
+	background-color: green;
+	color: rgba(0,0,0,0);
+	padding: 50px 70px;
+	overflow: hidden;
+	display: inline-block;
+	position: absolute;
+	top: -60px;
+	right: -70px;
+	box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.6);
+}
+.statsbox .graph{
+	height: 300px;
+	border: 1px dotted gray;
+	margin-bottom: 10px;
+}
+.stats .col-md-4{
+	margin-bottom: 20px;
+}
+.statsbox table tr{
+	height: 30px;
+}
+
+.statsbox table tr td:nth-child(even){
+	font-weight: bold;
+	font-family: monospace;
+
+}
+
+.statsbox table tr td:nth-child(4){
+	text-align: right;
+}
+.statsbox table tr td:nth-child(3){
+	text-align: right;
+}
+
+.whitetext{
+	color: white;
+}
+
+/*stats page (performance) ends*/
+
+
+@media only screen and (max-width: 768px) {
+	.cell {
+		width: 35px;
+		height: 35px;
+		font-size: 23px;
+	}
+	.sudo{
+		float: none;
+		width: 100%;
+		height: auto;
+		text-align: center;
+	}
+	.input-buttons{
+		font-size: 0px;
+		text-align: center;
+		padding-top: 0px;
+		height: auto;
+	}
+	.input-buttons span{
+		width: 32px;
+		height: 40px;
+		font-size: 20px;
+		padding: 5px;
+		text-align: center;
+		border-radius: 5px;
+	}
+	#bx{
+		width: 32px;
+		height: 40px;
+		padding-top: 5px;
+		font-size: 20px;
+	}
+	.tg{
+		margin-left: 0px;
+		display: inline-block;
+	}
+	.action-buttons{
+		font-size: 20px;
+		margin-top: 10px;
+	}
+	.action-buttons button{
+		height: 50px;
+	}
+	.action-buttons #reset{
+		width: 105px;
+	}
+	.action-buttons #newgame{
+		width: 210px;
+		background-color: #0053aa;
+		color: white;
+	}
+	.navbar{
+		height: auto;
+		padding-top: 10px;
+	}
+	.navbar-brand{
+		font-size: 25px;
+	}
+	.top-bar{
+		text-align: center;
+	}
+	.top-info{
+		width: 322px;
+		font-size: 12px;
+	}
+	#timer .timeValue{
+		font-size: 12px;
+	}
+	.switch-theme{
+		padding: 10px 15px;
+	}
+	#bottom-info{
+		width: 322px;
+	}
+	.popup-name h2{
+		font-size: 20px;
+	}
+	.popup-name .nameip{
+		font-size: 30px;
+		color: #fe2;
+		width: 90%;
+		margin-top: 15px;
+	}
+}

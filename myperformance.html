@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>My performance | Sudoku Gamer</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
+	
+	<!-- external resources -->
+	<link rel="stylesheet" href="res/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="res/jquery.min.js"></script>
+	<script src="res/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@3.2.1/dist/chart.min.js"></script>
+	<!-- external files -->
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script type="text/javascript" src="stats.js"></script>
+</head>
+
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>                        
+			</button>
+		<a class="navbar-brand" href="index.html">
+			Sudoku <span style="color: #5588ff"> Gamer</span>
+		</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      
+      <ul class="nav navbar-nav navbar-right">
+      	<li>
+      		<a href="#" class="navopt" style="padding: 0px">
+      			<label class="switch-theme">
+      				<span class="glyphicon glyphicon-adjust"></span>
+					<input type="checkbox">
+					<span class="switch-text"></span>
+				</label>
+      		</a>
+      		
+      	</li>
+
+      	<li><a href="myperformance.html" class="navopt"><span class="glyphicon glyphicon-stats"></span> &nbsp;My Performance</a></li>
+
+      	<li class="dropdown">
+          <a class="dropdown-toggle navopt" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-info-sign"></span> &nbsp;About <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="aboutSudoku.html"><span class="glyphicon glyphicon-hand-right"></span> &nbsp;&nbsp;About Sudoku</a></li>
+            <li><a href="aboutUs.html"><span class="glyphicon glyphicon-hand-right"></span> &nbsp;&nbsp;About Us</a></li>
+          </ul>
+        </li>
+        
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+
+<div class="container perfclass">
+	
+	<h2 id="greet"></h2>
+	<p>Find your statistics here.</p>
+	<hr>
+	<div class="row stats">
+		<div class="col-md-4 ">
+			<div class="statsbox">
+				<p class="badges" style="background-color: #32a852">.</p>
+				<h3>Easy</h3>
+				<div class="graph">
+					<canvas id="easyChart" width="400" height="300"></canvas>
+				</div>
+				<table border="0" width="100%" class="tables">
+					<tr><td>Total games</td><td id="easygames"></td>  <td>Avg. time</td><td id="easyavg"></td></tr>
+
+					<tr><td>Finished games</td><td id="easycount"></td>  <td>Best time</td><td id="easybest"></td></tr>
+				</table>
+
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="statsbox">
+				<p class="badges" style="background-color: #ffc400">.</p>
+				<h3>Medium</h3>
+				<div class="graph">
+					<canvas id="mediumChart" width="400" height="300"></canvas>
+					
+				</div>
+				<table border="0" width="100%" class="tables">
+					<tr><td>Total games</td><td id="medgames"></td>  <td>Avg. time</td><td id="medavg"></td></tr>
+
+					<tr><td>Finished games</td><td id="medcount"></td>  <td>Best time</td><td id="medbest"></td></tr>
+				</table>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="statsbox">
+				<p class="badges" style="background-color: #d91a00">.</p>
+				<h3>Hard</h3>
+				<div class="graph">
+					<canvas id="hardChart" width="400" height="300"></canvas>
+					
+				</div>
+				<table border="0" width="100%" class="tables">
+					<tr><td>Total games</td><td id='hardgames'></td>  <td>Avg. time</td><td id="hardavg"></td></tr>
+
+					<tr><td>Finished games</td><td id='hardcount'></td>  <td>Best time</td><td id="hardbest"></td></tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+</body>
+
+</html>

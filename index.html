@@ -1,0 +1,158 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+	<title>Sudoku Gamer</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
+	
+	<!-- external resources -->
+	<link rel="stylesheet" href="res/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="res/jquery.min.js"></script>
+	<script src="res/js/bootstrap.min.js"></script>
+	<!-- external files -->
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>                        
+			</button>
+		<a class="navbar-brand" href="index.html ">
+			Sudoku <span style="color: #5588ff"> Gamer</span>
+		</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      
+      <ul class="nav navbar-nav navbar-right">
+      	<li>
+      		<a href="#" class="navopt" style="padding: 0px">
+      			<label class="switch-theme">
+      				<span class="glyphicon glyphicon-adjust"></span>
+					<input type="checkbox">
+					<span class="switch-text"></span>
+				</label>
+      		</a>
+      		
+      	</li>
+
+      	<li><a href="myperformance.html" class="navopt"><span class="glyphicon glyphicon-stats"></span> &nbsp;My Performance</a></li>
+
+      	<li class="dropdown">
+          <a class="dropdown-toggle navopt" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-info-sign"></span> &nbsp;About <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="aboutSudoku.html"><span class="glyphicon glyphicon-hand-right"></span> &nbsp;&nbsp;About Sudoku</a></li>
+            <li><a href="aboutUs.html"><span class="glyphicon glyphicon-hand-right"></span> &nbsp;&nbsp;About Us</a></li>
+          </ul>
+        </li>
+        
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+
+<div class="container">
+	<div class="full-popup">
+		<div class="popup-content popup-level" style="display: none;">
+			<p>Choose difficulty level</p>
+			<p class="levels lvE">Easy</p>
+			<p class="levels lvM">Medium</p>
+			<p class="levels lvH">Hard</p>
+		</div>
+		<div class="popup-content popup-name">
+			<h2>Your good name please....</h2>
+			<input type="text" name="name" class="nameip" autocomplete="off" spellcheck="false" maxlength="15"><br>
+			<button class="btn btn-primary" id="name-btn">Start chey</button>
+		</div>
+	</div>
+	<!-- for space -->
+	<div style="height: 20px"></div>
+
+	<div class="top-bar">
+		<div class="top-info"> 
+			<div id="timer">
+				<span class="glyphicon glyphicon-play-circle"></span>
+				<span class="timeValue" data-time="0">00:00:00</span>
+			</div>​
+			<div id="errors">
+				<span style="font-weight: 400;">Errors: </span><span id="errorcount">0/3</span>
+			</div>
+			<div id="difficulty">
+				<span style="font-weight: 400;">Level: </span><span id="diff">None</span>
+			</div>
+		</div>
+		
+	</div>
+
+	<div class="main">
+		<div class="sudo">
+			<table border="1px solid gray" id="sudoku" cellspacing="0" cellpadding='0'>
+				<tr>
+					<td data-box="1"></td>
+					<td data-box="2"></td>
+					<td data-box="3"></td>
+				</tr>
+				<tr>
+					<td data-box="4"></td>
+					<td data-box="5"></td>
+					<td data-box="6"></td>
+				</tr>
+				<tr>
+					<td data-box="7"></td>
+					<td data-box="8"></td>
+					<td data-box="9"></td>
+				</tr>
+			</table>
+			<br>
+			<div id="bottom-info">
+				<span id="status">Waiting for you</span>
+				<span id="view-sol">View Solution</span>
+			</div>
+		</div>
+
+		<div class="input-buttons">
+			<div class="three1 tg">
+				<span id="b1">1</span>
+				<span id="b2">2</span>
+				<span id="b3">3</span>
+			</div>
+			<div class="three2 tg">
+				<span id="b4">4</span>
+				<span id="b5">5</span>
+				<span id="b6">6</span>
+			</div>
+			<div class="three3 tg">
+				<span id="b7">7</span>
+				<span id="b8">8</span>
+				<span id="b9">9</span>
+			</div>
+			<div class="three4 tg">
+				<span id="bx">&times;</span>
+			</div>
+			<div class="action-buttons">
+				<button id="reset">Reset</button>
+				<button id="newgame">New game</button>
+			</div>
+		</div>
+	</div>
+	
+
+</div>
+
+</body>
+
+</html>
