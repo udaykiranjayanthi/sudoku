@@ -58,6 +58,7 @@ body{
 .popup-content p{
 	font-size: 25px;
 	margin-bottom: 20px;
+	margin-top: -20px;
 }
 .popup-content .levels{
 	display: inline-block;
