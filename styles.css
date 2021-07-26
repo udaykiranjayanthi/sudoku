@@ -39,7 +39,7 @@ body{
 	top: auto;
 	left: 0px;
 	background-color: rgba(0,0,0,0.8);
-	height: calc(100vh - 70px);
+	height: calc(100% - 70px);
 	width: 100%;
 	z-index: 1;
 	text-align: center;
@@ -440,7 +440,7 @@ td{
 		font-size: 12px;
 	}
 	.full-popup{
-		height: calc(100vh - 62px);
+		height: calc(100% - 62px);
 	}
 	#timer .timeValue{
 		font-size: 12px;
